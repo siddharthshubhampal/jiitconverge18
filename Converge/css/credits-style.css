@@ -1,0 +1,312 @@
+@charset "utf-8";
+.full-credit{
+	height:100%;
+	width:100%;
+	background:#242424;
+}
+
+.header-college{
+	width:100%;
+	text-align:center;
+	padding:30px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:180%;
+}
+
+.header-fest{
+	width:100%;
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:160%;
+}
+
+.name-panel{
+	float:left;
+	height:100%;
+	display:inline-block;
+	width:100%;
+	background:#242424;
+	overflow:auto;
+}
+
+.name-panel .category{
+	width:100%;
+	padding-top:40px;
+}
+
+.name-panel>.category>.member{
+	padding-top:30px;
+}
+
+.name-panel .category-name{
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:140%;
+}
+
+.name-panel>.category>.member>.name,.name-panel>.category>.member>.designation{
+	width:50%;
+	float:left;
+	display:inline-block;
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:120%;
+}
+
+
+
+.social-btn-container{
+	text-align:center;
+	margin:50px auto 0 auto;
+}
+.social-btn-container .social-btn-box{
+	display:inline-block;
+	width:60px;
+	height:60px;
+
+	-webkit-transform:rotate(45deg);
+	   -moz-transform:rotate(45deg);
+	    -ms-transform:rotate(45deg);
+	     -o-transform:rotate(45deg);
+	        transform:rotate(45deg);
+
+	border:1px solid #fff;
+
+	-webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+	    -ms-border-radius:5px;
+	     -o-border-radius:5px;
+	        border-radius:5px;
+
+	margin:15px;
+	position:relative;
+	overflow:hidden;
+}
+.social-btn-container .social-btn-box a{
+	color:#fff;
+	font-size:26px;
+	line-height:80px;
+	display:inline-block;
+	width:80px;
+	height:80px;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+
+	-webkit-transform:rotate(-45deg);
+	   -moz-transform:rotate(-45deg);
+	    -ms-transform:rotate(-45deg);
+	     -o-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+.social-btn-box,
+.social-btn-box a{
+	
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.social-btn-box:hover{
+	border-color:transparent;
+}
+.social-btn-box .facebook-btn:hover{
+	background:#3B5998;
+	color: #fff;
+}
+.social-btn-box .twitter-btn:hover{
+	background:#55ACEE;
+	color: #fff;
+}
+.social-btn-box .linkedin-btn:hover{
+	background:#0077b5;
+	color: #fff;
+}
+.social-btn-box .google-plus-btn:hover{
+	background:#db514f;
+	color: #fff;
+}
+.social-btn-box .youtube-btn:hover{
+	background:#cc181e;
+	color: #fff;
+}
+.social-btn-box .github-btn:hover{
+	background:#2b2e30;
+	color: #fff;
+}
+.social-btn-box .a:hover{
+	background:#3498db;
+	color: #fff;
+}
+/* 2.2 - Social Button
+------------------------------------------ */
+
+
+/* 2.3 - Placeholder color
+------------------------------------------ */
+.form-control::-webkit-input-placeholder {
+   color: #ffffff;
+}
+
+.form-control:-moz-placeholder { 
+   color: #ffffff;  
+}
+
+.form-control::-moz-placeholder { 
+   color: #ffffff;  
+}
+
+.form-control:-ms-input-placeholder{
+	color:#ffffff;
+}
+/* 2.3 - Placeholder color End 
+------------------------------------------ */
+
+
+/* 2.4 - Height Resize
+------------------------------------------ */
+
+.pattern.height-resize{
+	padding-top: 40px;
+}
+.height-resize .time-count-container{
+	margin-top: 20px !important;
+}
+.height-resize .team-container .col-sm-4{
+	padding-top:20px !important;
+}
+
+
+.team-container .col-sm-4{
+	padding:60px 15px 0 15px;
+}
+.team-container .team-member{
+	max-width:245px;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+}
+
+
+.team-container figcaption{
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+	height:110px;
+	border:1px solid #fff;
+	border-top-color:transparent;
+	margin:0;
+}
+.team-container figcaption h4{
+	font-size:22px;
+	font-weight:700;
+	padding-top:20px;
+}
+.team-container .member-name {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 26px 10px 5px 10px;
+}
+.team-container figcaption p{
+	font-size: 1.125em;
+}
+.team-container .social-buttons{
+	display:inline-block;
+	margin:auto;
+	text-align:center;
+	width:100%;
+}
+
+.team-member .social-btn-container,
+.team-member .social-btn-container .social-btn-box{
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+
+.team-member .social-btn-container {
+	position: absolute;
+	top: 0px;
+	margin: 0 auto;
+	left: 0;
+}
+.team-member:hover .social-btn-container{
+	background: rgba(0,0,0,.5);
+}
+.team-member .social-btn-container .team-socail-btn{
+	overflow: hidden;
+	position: relative;
+	width:245px;
+	height: 230px;
+}
+.team-member .social-btn-container .social-btn-box{
+	position: absolute;
+
+}
+.team-member .social-btn-container .facebook-btn-container{
+	bottom: 220px;
+	right: 230px;
+}
+.team-member .social-btn-container .twitter-btn-container{
+	bottom: 220px;
+	left: 230px;
+}
+.team-member .social-btn-container .linkedin-btn-container{
+	top: 220px;
+	right: 230px;
+}
+.team-member .social-btn-container .github-btn-container{
+	top: 220px;
+	left: 230px;
+}
+
+.team-member:hover .social-btn-container .facebook-btn-container{
+	bottom: 115px;
+	right: 122px;
+}
+.team-member:hover .social-btn-container .twitter-btn-container{
+	bottom: 115px;
+	left: 122px;
+}
+.team-member:hover .social-btn-container .linkedin-btn-container{
+	top: 115px;
+	left: 122px;
+}
+.team-container .social-buttons a{
+	color:#fff;
+	width:24px;
+	height:24px;
+	display:inline-block;
+	font-size:24px;
+	text-align:center;
+}
+.team-container .team-member figure,
+.team-container .team-member figcaption,
+.team-container .team-member img,
+.team-container .team-member .social-buttons{
+	
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.team-container .team-member:hover figure{
+	background-color:#3498db;
+	color:#fff;
+}
+.team-container .team-member:hover figcaption{
+	border-color:#3498db;
+	color:#fff;
+}
+
+.team-container .team-member:hover .social-buttons{
+	top:90px;
+}

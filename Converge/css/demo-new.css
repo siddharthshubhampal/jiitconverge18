@@ -1,0 +1,157 @@
+
+/* CSS reset */
+
+.highlight-box{
+	width:100%;
+	height:100%;
+	background:#e1e1e1;
+	padding:10px;
+	overflow:auto;
+}
+
+.highlightpage > header{
+	padding: 20px 30px 10px 30px;
+	margin-bottom: 10px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+.highlightpage > header h1{
+	font-family: "Lato", sans-serif;
+	font-size: 35px;
+	position: relative;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #444;
+    padding: 0px 0px 5px 0px;
+}
+.highlightpage > header h1 span{
+	color: rgba(0,0,0,0.9);
+}
+
+.highlight-box > header{
+	padding: 20px 30px 0px 0px;
+	margin-bottom: 0px;
+	margin-top:-80px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+.highlight-box > header h1{
+	font-family: "Lato", sans-serif;
+	font-size: 35px;
+	position: relative;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #222;
+    padding: 0px 0px 5px 0px;
+}
+.highlight-box > header h1 span{
+	color: rgba(0,0,0,0.9);
+}
+
+
+/* Header Style */
+
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.highlightpage > header{
+		text-align: center;
+	}
+	
+}
+
+.dg-container{
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+.dg-wrapper{
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+	display:block;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.img-placeholder{
+	width: 482px;
+	height: 316px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: transparent url("../images/highlights/browser.png") no-repeat top left;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+.img-placeholder.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.img-placeholder img{
+	display: block;
+	padding: 41px 0px 0px 1px;
+}
+.text1{
+	font-style: italic;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	color: #333;
+	font-size: 16px;
+	width: 100%;
+	bottom: -55px;
+	display: none;
+	position: absolute;
+}
+.hidden{
+	visibility:hidden;}
+	
+.text1{
+	display: block;
+}
+.dg-container nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -29px;
+}
+.dg-container nav span{
+	text-indent: -9000px;
+	float: left;
+	cursor:pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+	background: transparent url("../images/highlights/arrows.png") no-repeat top left;
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next{
+	background-position: top right;
+	margin-left: 10px;
+}
+
+
+ 

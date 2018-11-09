@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.grid li span {
+	display: inline-block;
+	font-weight: 900;
+	line-height: 1;
+	position: relative;
+	color: hsla(0, 0%, 0%, 0.6);
+	transform-style: preserve-3d;
+	perspective: 550px;
+	z-index: 1;
+}

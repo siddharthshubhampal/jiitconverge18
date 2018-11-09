@@ -1,0 +1,57 @@
+@charset "utf-8";
+.full-credit{
+	height:100%;
+	width:100%;
+	background:#242424;
+}
+
+.header-college{
+	width:100%;
+	text-align:center;
+	padding:30px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:160%;
+}
+
+.header-fest{
+	width:100%;
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:140%;
+}
+
+.name-panel{
+	float:left;
+	height:100%;
+	display:inline-block;
+	width:100%;
+	background:#242424;
+	overflow:auto;
+}
+
+.name-panel .category{
+	width:100%;
+	padding-top:40px;
+}
+
+.name-panel>.category>.member{
+	padding-top:30px;
+}
+
+.name-panel .category-name{
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:120%;
+}
+
+.name-panel>.category>.member>.name,.name-panel>.category>.member>.designation{
+	width:50%;
+	float:left;
+	display:inline-block;
+	text-align:center;
+	padding:0px 0px;
+	font-family:'Lato',sans-serif;
+	font-size:100%;
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.technical-block{
+	height:100%;
+	width:100%;
+	background:#3C3C3C;
+	z-index:1000;
+}
+
+.technical-groups{
+	height:100%;
+	width:100%;
+}
+
+.technical-groups .groups{
+	width:33.33%;
+	height:100%;
+	background:#1f1f1f;
+	float:left;
+	display:inline-block;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+.content-main{
+	width:100%;
+	height:30%;
+	display:block;
+}
+
+.top-offset,.bottom-offset{
+	height:30%;
+	width:100%;
+	display:block;
+}
+.highl{
+	width:719px;
+	display: block;
+    margin: 0px auto;
+	height: 92px;
+	opacity:1;
+}
+
+.converge-title> div {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.converge-title> div.letter1{
+	float:left;
+	height:92px;
+	margin-left:0px;
+}
+
+div>span.black{
+	position:relative;
+	z-index: 3;
+}
+
+div.letter1>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat 0 0;
+    display: block;
+    /*/*zoom: 1;*/
+    background-position: 0px 0px;
+    width: 86px;
+    height: 91px;
+    text-indent: -6000px;
+    /*text-align: left;*/
+}
+div.letter2>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*/*zoom: 1;*/
+    background-position: -97px 0px;
+    width: 90px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+div.letter3>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -205px 0px;
+    width: 75px;
+    height: 93px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter4>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -301px 0px;
+    width: 87px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter5>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -417px 0px;
+    width: 73px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter6>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -519px -0px;
+    width: 79px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter7>span.black{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -609px -0px;
+    width: 86px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter8>span.black{
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -417px -0px;
+    width: 73px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+/*sum 649*/
+div>span.red{
+	position:absolute;
+	z-index: 1;
+	top: 0;
+	left:0;
+}
+
+div.letter1>span.red{
+	background: url("../images/title/sprite-converge.png") no-repeat;
+	display: block;
+	/*zoom: 1;*/
+	background-position: 0px -114px;
+	width: 86px;
+	height: 91px;
+	text-indent: -6000px;
+	text-align:left;
+}
+
+div.letter2>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -98px -114px;
+    width: 91px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+div.letter3>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -205px -114px;
+    width: 75px;
+    height: 93px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter4>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -303px -114px;
+    width: 86px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter5>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -417px -114px;
+    width: 73px;
+    height: 90px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter6>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -519px -114px;
+    width: 79px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter7>span.red{
+	
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -609px -114px;
+    width: 86px;
+    height: 91px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+div.letter8>span.red{
+	background: url("../images/title/sprite-converge.png") no-repeat;
+    display: block;
+    /*zoom: 1;*/
+    background-position: -417px -114px;
+    width: 73px;
+    height: 90px;
+    text-indent: -6000px;
+    text-align: left;
+}
+
+.r-animate{
+	-moz-animation: ripple 1s;
+	-webkit-animation: ripple 1s;
+	-ms-animation: ripple 1s;
+	-o-animation: ripple 1s;
+	animation: ripple 1s;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes ripple {
+    0%   {transform: scale(1,1);opacity:1;}
+    
+    100% {transform: scale(1.7,1.8);opacity:0;}
+}
+
+/* Standard syntax */
+@keyframes ripple {
+     0%   {transform: scale(1,1);opacity:1;}
+
+    100% {transform: scale(1.7,1.8);opacity:0;}
+}
