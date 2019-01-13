@@ -45,20 +45,21 @@ if ($gender == 1){
 else {
     $gender = 'Boys';
 }
-//$event_type = mysqli_escape_string($connection, $_POST['event_type']);
-//if ($event_type == 1){
- //   $event_type = 'Singles';
-//}
-//else {
-//    $event_type = 'Team';
-//}
+
+// $event_type = mysqli_escape_string($connection, $_POST['event_type']);
+// if ($event_type == 1){
+//     $event_type = 'Singles';
+// }
+// else {
+//     $event_type = 'Team';
+// }
 
 $event_type = 'Team';
 
 //$team;
 $eventname=$gender.' Badminton Competition - '.$event_type ;
 $date= ' 2nd, 3rd and 4th Feb 2018 ';
-$eventime= ' 9:00 A.M. - 5:00 P.M. ';
+$eventime= ' 9:00 A.M. to 5:00 P.M. ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM badminton WHERE email_id='$email1' and event_type='$event_type' or contact='$phone1' and event_type='$event_type' or gender!='$gender' and email_id='$email1' or gender!='$gender' and contact='$phone1'");
  if($ses_sql->num_rows==0)
@@ -80,9 +81,9 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM badminton WHERE email_id='$emai
         //$message4 = "Hi $fname1 ";
         $message4= "Thank You for registering at Converge-2018<br> ";
         $message2 = "Your Event Details <br><br>Event: $eventname";
-        $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
+        $message2.= "<br>On $date <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinators<br>Arjun Singh 8700126696 <br>Regards JIIT Converge Team ";
+        $message3.= "<br>Event Coordinators<br>Arjun 8700126696 <br>Regards JIIT Converge Team ";
         $header = "From: ".$admin;   
 
         $fmessage =$message4.$message2.$message3;
@@ -92,7 +93,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM badminton WHERE email_id='$emai
         //sendmail($user,$subject,$message2,$header);
        // sendmail($user,$subject,$message3,$header);
 
-        $message = "A new registration for event: $eventname <br>Details <br>Participant/Team Captain Name: $fname1 ";
+        $message = "A new registration for event: $eventname <br><b>Details</b> <br>Participant/Team Captain Name: $fname1 ";
         $message.= "<br>Mail-ID: $email1 <br>Contact No.: $phone1 <br>College: $college ";
 
         $subject2 = "Form Submission for your event $eventname ";       

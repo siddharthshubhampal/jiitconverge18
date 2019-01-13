@@ -93,7 +93,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM badminton WHERE email_id='$emai
         //sendmail($user,$subject,$message2,$header);
        // sendmail($user,$subject,$message3,$header);
 
-        $message = "A new registration for event: $eventname <br>Details <br>Participant/Team Captain Name: $fname1 ";
+        $message = "A new registration for event: $eventname <br><b>Details</b> <br>Participant/Team Captain Name: $fname1 ";
         $message.= "<br>Mail-ID: $email1 <br>Contact No.: $phone1 <br>College: $college ";
 
         $subject2 = "Form Submission for your event $eventname ";       

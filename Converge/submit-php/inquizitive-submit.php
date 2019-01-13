@@ -49,9 +49,9 @@ $fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 $phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 $email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 4th FEB 2017 ';
+$date= ' 3rd FEB 2018 ';
 $eventime= ' 11:00 A.M. ';
-$reportime= ' 10:00 A.M. ';
+$reportime= ' 10:30 A.M. ';
 $ses_sql1 = '';
 $ses_sql=mysqli_query($connection,"SELECT * FROM quizzing WHERE email1='$email1' or email2='$email1' or phone_participant1='$phone1' or phone_participant2='$phone1'");
 if ($email2 != ''){
@@ -78,14 +78,14 @@ else {
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details</div>";
         $user = $email1; // Participant's Mail-ID
         $admin = 'admin@jiitconverge.com';     
-        $fest = "qriosity.jiit128@gmail.com";   
+        $fest = "samarthd97@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message1 = "Thank You for registering at Converge-2017 <br>";
+        $message1 = "Thank You for registering at Converge-2018 <br>";
         $message2 = "Your Event Details <br><br>Event: $eventname";
-        $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime in LT1";
+        $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime.";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinators<br>Mehul Gupta 9654879941 <br><br>Regards JIIT Converge Team ";
+        $message3.= "<br>Event Coordinators<br>Samarth Dhingra 8447897332 <br><br>Regards JIIT Converge Team ";
         $header = "From: ".$admin; 
 
         $fmessage =$message1.$message2.$message3;

@@ -34,20 +34,20 @@ $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
 //$lname1=mysqli_real_escape_string($connection,$_POST['lastname1']);
 $college=mysqli_real_escape_string($connection,$_POST['college']);
 $event='FLUTTER THE SHUTTER';
-$eventname='Photography Competition';
+$eventname='FLUTTER THE SHUTTER - Photography Competition';
 $year=mysqli_real_escape_string($connection,$_POST['year']);
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
 
 //$team;
-$date= ' 4th FEB 2017 ';
-$eventime= ' 5:00 P.M. ';
-$reportime= ' 04:30 P.M. ';
+$date= ' 1st FEB 2018 ';
+$eventime= ' NA ';
+$reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event' and email_id ='$email1' or event_name='$event' and phone_participant='$phone1'");
  if($ses_sql->num_rows==0)
  {
      // new record
-     $sql = "INSERT INTO sports VALUES ('$event','$college','$fname1','$phone1','$email1','','$year')";
+     $sql = "INSERT INTO sports VALUES ('','$event','$college','$fname1','$phone1','$email1','','$year')";
      if (mysqli_query($connection,$sql) == TRUE) {
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details</div>";
         $user = $email1; // Participant's Mail-ID
@@ -56,11 +56,11 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event
         $subject = "Copy of your form submission";
 
         //$message4 = "Hi $fname1 ";
-        $message4= "Thank You for registering at Converge-2017 <br>";
+        $message4= "Thank You for registering at Converge-2018 <br>";
         $message2 = "Your Event Details <br><br>Event: $eventname";
-        $message2.= "<br>On $date";
-        $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinator<br> Kaamini Jha +91-9871704410<br>Fest Coordinator<br>Nishant Sachdeva +91-8130184220 <br><br>Regards JIIT Converge Team ";
+        $message2.= "<br>This is an online event. Submission deadline: $date ";
+        $message3 = "<br><br>Location: online event<br><br>For more details,<br>Contact ";
+        $message3.= "<br>Event Coordinator<br> Tanmay Mathur : 9871767650<br>Regards JIIT Converge Team ";
         $header = "From: ".$admin; 
 
         $fmessage =$message4.$message2.$message3;

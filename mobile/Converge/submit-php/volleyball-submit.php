@@ -37,40 +37,54 @@ $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
 //$lname1=mysqli_real_escape_string($connection,$_POST['lastname1']);
 $college=mysqli_real_escape_string($connection,$_POST['college']);
 $event='VOLLEYBALL';
-$eventname='Volleyball Competition';
+
 //$year=mysqli_real_escape_string($connection,$_POST['year']);
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
+$gender=  mysqli_escape_string($connection, $_POST['gender']);
+if ($gender == 1){
+    $gender = 'Girls';
+}
+else {
+    $gender = 'Boys';
+}
 
+$eventname=$gender.' Volleyball Competition';
 //$fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 //$lname2=mysqli_real_escape_string($connection,$_POST['lastname2']);
 //$phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 //$email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' NA ';
-$eventime= ' NA ';
+$date= ' 2nd, 3rd & 4th FEB 2018 ';
+$eventime= ' 9:00 A.M. to 5:00 P.M. ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event' and email_id = '$email1'");
  if($ses_sql->num_rows==0)
  {
      // new record
-     $sql = "INSERT INTO sports VALUES ('$event','$college','$fname1','$phone1','$email1','$team_members','')";
+     $sql = "INSERT INTO sports VALUES ('$gender','$event','$college','$fname1','$phone1','$email1','$team_members','0')";
       if (mysqli_query($connection,$sql) == TRUE) {
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details</div>";
         $user = $email1; // Participant's Mail-ID
         $admin = 'admin@jiitconverge.com';     
-        $fest = "ayushmaan.hts@gmail.com";   
+        $fest = "bhumikamungoli1997@gmail.com";  //GIRLS EVENT HEAD
+        $fest1= "jprahuljoshi@gmail.com"; //BOYS EVENT HEAD
         $subject = "Copy of your form submission";
 
-        //$message1 = "Hi $teamname !";
-        $message1= "Thank You for registering at Converge-2016<br> ";
-        $message2 = "Your Event Details <br><br>Event: $eventname";
-        $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
-        $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinator<br>Ayushmaan Bansal +91-9069496103 <br><br>Regards JIIT Team ";
+        //$message1 = "Hi $teamname !"; <br>Reporting Time: $reportime 
+        $message1= "Thank You for registering at Converge-2018<br> ";
+        $message2 = "Your Event Details <br>Event: $eventname";
+        $message2.= "<br>On $date <br>Event starts at $eventime ";
+        $message3 = "<br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br>For more details,<br>Contact ";
+	 	if ($gender == 'Boys'){
+             $messagex= "<br>Event Coordinator<br>Rahul Joshi +91-9599932156 <br><br>Regards JIIT Team ";
+         }
+         else {
+             $messagex= "<br>Event Coordinator<br>Bhumika Mungoli +91-7011385374 <br><br>Regards JIIT Team ";
+         }
         $header = "From: ".$admin;
 
-        $fmessage =$message1.$message2.$message3;
+        $fmessage =$message1.$message2.$message3.$messagex;
         $m=maildesign($fmessage,$fname1);
         sendmail($user,$subject,$m,$header);
 
@@ -82,7 +96,10 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event
         $message.= "<br>Number of members in the team: $team_members";
         $message.= "<br>College: $college  <br>Team Captain Details <br><br>Name: $fname1 <br>Mail-ID: $email1 <br>Contact No.: $phone1 ";
         $subject2 = "Form Submission for your event $eventname ";    
-        sendmail($fest,$subject2,maildesign($message,"Event Head"),$header); // sends a copy of the message to the sender   
+          if ($gender == 'Boys'){
+        sendmail($fest1,$subject2,maildesign($message,"Event Head"),$header); // sends a copy of the message to the sender   
+        }
+        else{sendmail($fest,$subject2,maildesign($message,"Event Head"),$header);}
         
      } else {
          echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. Please try again.</div>";

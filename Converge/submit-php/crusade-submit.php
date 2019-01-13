@@ -71,8 +71,8 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM music_society WHERE event_name=
             $message2 = "Your Event Details <br>Event: $eventname";
             $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
             $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-            $message3.= "<br>Event Coordinator<br>Kartik Kejariwal +91-7011671174 <br><br>Regards JIIT Converge Team ";
-			$message4 = "<br><i>Please note that only <b>EIGHT BANDS<b> will be <b>SELECTED<b> are allowed to participate. <br> There will be a Confirmation call 3 days prior to the event. <br>For any queries, contact the event coordinator.";
+            $message3.= "<br>Event Coordinator<br>Kartik Kejariwal +91-7011671174 <br><br>Regards<br> JIIT Converge Team <br>";
+			$message4 = "<br><i><b>Please note that only SEVEN BANDS<b> will be SELECTED are allowed to participate. <br> There will be a Confirmation call 3 days prior to the event. <br>For any queries, contact the event coordinator.";
             $header = "From: ".$admin; 
             $fmessage =$message1.$message2.$message3.$message4;
             $m=maildesign($fmessage,$teamname);

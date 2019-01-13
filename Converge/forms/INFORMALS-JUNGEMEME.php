@@ -1,0 +1,1 @@
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>If a new window is not opened yet. Pls <a href="https://goo.gl/forms/TF3gv8ySA8dPGBR92" target="_blank">click here</a></div>

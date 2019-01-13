@@ -1,5 +1,6 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like you were a bit too late.</div> -->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for this event.<br><br> For enquiry, contact:<br>Shubham +91-9650830688</div>
 
+<!--
 <link rel="stylesheet" type="text/css" href="../../Converge/css/form-style.css">
 <script src="../../Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">groove</div>
@@ -63,20 +64,12 @@
                          
                        </select>
 </p>
--->
 
 <p>
 <div class="open-arrow"></div><label for="cemail">President's Details</label><br>
 <label for="cemail">Full Name</label>
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
-
-<!--
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
-</p>
--->
 
 <p>
 <label for="cemail">Phone</label>
@@ -94,12 +87,7 @@
 <input id="cemail" type="text" name="firstname2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
 
-<!--
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname2" pattern="[A-Za-z ]{1,30}" >
-</p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -117,10 +105,9 @@
 <label for="cemail">E-Mail (required)</label>
 <input id="cemail" type="email" name="email2" required>
 </p>
--->
 
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

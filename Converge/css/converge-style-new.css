@@ -881,7 +881,7 @@ div.sub-pages-checksp>div.sub-page-body>div.full,div.sub-pages>div.sub-page-body
 .block-text{
 	word-wrap:break-word;
 	text-align:center;
-	font-weight:400;
+	font-weight:100;    /* 400 */
 	font-size:300%;
 	font-family: 'Lato', sans-serif;
 }

@@ -1,15 +1,16 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for CRUSADE.</div> -->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for this event.<br><br> For enquiry, contact:<br>Kartik +91-7011671174</div>
 
+<!--
 <link rel="stylesheet" type="text/css" href="../../Converge/css/form-style.css">
 <script src="../../Converge/js/formSubmit.js"></script>
-<div class="hidden event-name">crusade</div>
-<form class="cmxform" id="event-form" name="crusade" method="POST" >
+<div class="hidden event-name">beatboxing</div>
+<form class="cmxform" id="event-form" name="beatboxing" method="POST" >
 <fieldset>
 
 
 
 <p>
-<div class="open-arrow"></div><label for="cemail">Team Head Details</label><br>
+<div class="open-arrow"></div><label for="cemail">Personal Details</label><br>
 <label for="cemail">Full Name</label>
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required/></p>
 
@@ -55,13 +56,9 @@
 <label for="cemail">Video Link of Past Performance</label>
 <input id="cemail" type="text" name="url"  minlength="2" pattern="[A-Za-z,-_]{1,90}" required>
 </p>
--->
-
-
-
 
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

@@ -40,9 +40,9 @@ $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
 
 //$team;
-$date= ' Feb 4, 2017 ';
-$eventime= ' 8:30 A.M. ';
-$reportime= ' 8:00 A.M. ';
+$date= ' Feb 3, 2018 ';
+$eventime= ' 8:00 A.M. ';
+$reportime= ' 7:15 A.M. ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM youth_marathon WHERE email_id='$email1' or phone='$phone1'");
  if($ses_sql->num_rows==0)
  {
@@ -76,16 +76,16 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM youth_marathon WHERE email_id='
         $level="No Longer a Student - (College Pass out)";
         }
         $user = $email1; // Participant's Mail-ID
-        $admin = 'admin@junioriit.com';     
-        $fest = "nishantsachdeva@jiitconverge.com";   
+        $admin = 'admin@jiitconverge.com';     
+        $fest = "kapilgupta@outlook.in";   
         $subject = "Copy of your form submission";
 
        // $message4 = "Hi $fname1 ";
-        $message4= "Thank You for registering at Converge-2017 <br>";
-        $message2 = "Your Event Details <br><br>Event: $eventname";
+        $message4= "Thank You for registering at Converge-2018 <br>";
+         $message2 = "Your Event Details <br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime";
-        $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br> Note: Bus facility is available from Botanical Garden Metro Station to JII T128.<br>Time 8:30 AM Sharp. <br>For more details,<br>Contact ";
-        $message3.= "<br>Fest Coordinator<br>Nishant Sachdeva +91-8130184220 <br><br>Regards JIIT Converge Team ";
+        $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br>Time 8:00 AM Sharp. <br><br>For more details,<br>Contact ";
+        $message3.= "<br>Fest Coordinator<br>Kapil +91-9873434581 <br><br>Regards JIIT Converge Team ";
         $header = "From: ".$admin;
 
         $fmessage =$message4.$message2.$message3;

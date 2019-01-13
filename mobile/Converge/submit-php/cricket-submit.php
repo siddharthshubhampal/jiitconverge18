@@ -45,8 +45,8 @@ $gender='Boys';
 //$phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 //$email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 2nd, 3rd &amp; 4th FEB 2018 ';
-$eventime= ' 9:00 AM- 5:00 PM ';
+$date= ' 2nd, 3rd & 4th FEB 2018 ';
+$eventime= ' 9:00 A.M. to 5:00 P.M. ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event' and email_id = '$email1' or event_name='$event' and phone_participant='$phone1'");
  if($ses_sql->num_rows==0)

@@ -1,11 +1,13 @@
-<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Seems like we hit our max capacity for SABRANG.</div>
-<!--<link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for this event.<br><br> For enquiry, contact:<br>Sparsh +91-9981710089</div>
+<!--
+
+<link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">sabrang</div>
 <form class="cmxform" id="event-form" name="sabrang" method="POST" >
 <fieldset>
 
-<!--
+<!-- 
 <p>
 <label for="cname">Teamname</label>
 <input id="cname" name="teamname" minlength="2"  type="username" pattern="[A-Za-z,-_ ]{1,60}" required>
@@ -37,7 +39,9 @@
                                                                       <option id="13" value="13">13</option>
                                                                       <option id="14" value="14">14</option>
                                                                       <option id="15" value="15">15</option>
-                                                                      <option id="16" value="16">16</option>														
+                                                                      <option id="16" value="16">16</option>
+																	  <option id="17" value="17">17</option>
+                                                                      <option id="18" value="18">18</option>														
                               </select>
 </p>
 
@@ -51,10 +55,10 @@
                           <option value="4">Undergraduate 4th year</option>
                          
                        </select>
-</p>
+</p> 
 
 <p>
-<div class="open-arrow"></div><label for="cemail">Team Head Details</label><br>
+<div class="open-arrow"></div><label for="cemail">Team Head Details</label><br/>
 <label for="cemail">Full Name</label>
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
@@ -91,7 +95,7 @@
 
 <p>
 <label for="cemail">Phone</label>
-<input id="ph"  name="phone2" type="text" minlength="10" maxlength="10" pattern="[789]{1}[0-9]{9}">
+<input id="ph"  name="phone2" type="text" minlength="10" maxlength="10" pattern="[789]{1}9]{9}">
 </p>
 
 <p>
@@ -104,4 +108,4 @@
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>-->
+</form>

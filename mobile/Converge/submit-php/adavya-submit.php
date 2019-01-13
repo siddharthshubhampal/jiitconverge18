@@ -47,9 +47,9 @@ $fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 $phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 $email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 4th FEB 2017 ';
-$eventime= ' 11:00 A.M. ';
-$reportime= ' 9:30 A.M. ';
+$date= ' 3rd FEB 2018 ';
+$eventime= ' NA ';
+$reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM indian_dance WHERE event_name='$event' and email_id='$email1' or event_name='$event' and contact='$phone1' or event_name='$event' and contact='$phone2' or event_name='$event' and email_id='$email2'");
  if($ses_sql->num_rows==0)
  {
@@ -65,11 +65,11 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM indian_dance WHERE event_name='
         $fest = "bhangdedesartaajjiit@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message1 = "Thank You for registering at Converge-2017 <br>";
-        $message2 = "Your Event Details <br><br>Event: $eventname";
+        $message1 = "Thank You for registering at Converge-2018<br> <br>";
+        $message2 = "<b>Your Event Details </b><br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinators<br>Devarshi Srivastava 9953462934 <br>Regards JIIT Converge Team ";
+        $message3.= "<br>Event Coordinators<br>Sparsh Majhe : 9981710089 <br>Regards JIIT Converge Team ";
         $header = "From: ".$admin; 
 
         $fmessage =$message1.$message2.$message3;
@@ -100,7 +100,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM indian_dance WHERE event_name='
 // $team=$team+1;
 //break; 
 //}
-     echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. This email or contact is already registered for ADIVYA. Please try again.</div>";
+     echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. This email or contact is already registered for ADAVAYA. Please try again.</div>";
 }
 $connection->close();
 ?>

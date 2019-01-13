@@ -34,12 +34,12 @@ $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
 $college1=mysqli_real_escape_string($connection,$_POST['college1']);
 //$college2=mysqli_real_escape_string($connection,$_POST['college2']);
 $event='GOOGLEQUIZ';
-$eventname='Googled About Quiz ? - The Google Quiz';
+$eventname='DEV-VOGUE : TECHNICAL QUIZ';
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
-$date= 'FEB 5, 2017';
-$eventime= ' 11:00 A.M. ';
-$reportime= ' 10:30 A.M. ';
+$date= '3rd Feb 2018';
+$eventime= ' 11:30 A.M. ';
+$reportime= ' 11:15 A.M. ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM gdg_events WHERE event_name='$event' and email_id='$email1' or event_name='$event' and phone_participant='$phone1'");
  if($ses_sql->num_rows==0)
  {
@@ -54,23 +54,19 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM gdg_events WHERE event_name='$e
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check you email for details.</div>";
         $user = $email1; // Participant's Mail-ID
         $admin = 'admin@jiitconverge.com';     
-        $fest = "pranavsharma@jiitconverge.com";   
+        $fest = "harshitsidhwa7565@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message1 = "Thank You for registering at Converge-2017 <br>";
+        $message1 = "Thank You for registering at Converge-2018<br>";
         $message2 = "Your Event Details <br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinator<br>Pranav Sharma +918376003776 <br><br>Regards JIIT Converge Team ";
+        $message3.= "<br>Event Coordinator<br>Shantanu Mishra: +91-9873769338<br><br>Regards JIIT Converge Team ";
         $header = "From: ".$admin; 
 
         $fmessage =$message1.$message2.$message3;
         $m=maildesign($fmessage,$fname1);
-        sendmail($user,$subject,$m,$header);
-        //sendmail($user,$subject,$message1,$header);
-        //sendmail($user,$subject,$message2,$header);
-        //sendmail($user,$subject,$message3,$header);
-        
+        sendmail($user,$subject,$m,$header);       
         $message = "A new registration for event: $eventname <br>Details <br>Team Particpant Name: $fname1";
         $message.= "<br>College: $college1  <br><br>Team Participant Details <br>Name: $fname1 <br>Mail-ID: $email1 <br>Contact No.: $phone1 ";
         $message.= "<br>Team Name: $teamname <br>Number of members in the team: $team_members";

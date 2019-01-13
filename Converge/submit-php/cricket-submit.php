@@ -45,7 +45,7 @@ $gender='Boys';
 //$phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 //$email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 2nd & 3rd FEB 2017 ';
+$date= ' 2nd, 3rd & 4th FEB 2018 ';
 $eventime= ' 9:00 A.M. to 5:00 P.M. ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event' and email_id = '$email1' or event_name='$event' and phone_participant='$phone1'");
@@ -61,7 +61,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event
             $subject = "Copy of your form submission";
 
            // $message1 = "Hi $teamname !";
-            $message1= "Thank You for registering at Converge-2017<br> ";
+            $message1= "Thank You for registering at Converge-2018<br> ";
             $message2 = "Your Event Details <br><br>Event: $eventname";
             $message2.= "<br>On $date <br>Event starts at $eventime ";
             $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";

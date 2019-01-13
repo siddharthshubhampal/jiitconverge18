@@ -32,7 +32,8 @@ ini_set("mail.add_x_header", TRUE);
 
 // teamname = society name
 $teamname=mysqli_real_escape_string($connection,$_POST['teamname']);
-$transport = mysqli_real_escape_string($connection,$_POST['transport']);
+//$transport = mysqli_real_escape_string($connection,$_POST['transport']);
+$transport='No';
 $team_members=mysqli_real_escape_string($connection,$_POST['team_members']);
 $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
 //$lname1=mysqli_real_escape_string($connection,$_POST['lastname1']);
@@ -49,9 +50,9 @@ $fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 $phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 $email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 5th FEB 2017 ';
-$eventime= ' 3:00 P.M. ';
-$reportime= ' 2:00 P.M. ';
+$date= ' 4th FEB 2018 ';
+$eventime= ' 02:15 P.M. ';
+$reportime= ' 10:00 A.M. ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM panache WHERE society_name='$teamname' or phone_head = '$phone1' or phone_head = '$phone2' or phone_rep = '$phone1' or phone_rep='$phone2' or email_head='$email1' or email_head='$email2' or email_rep = '$email1' or email_rep = '$email2'");
  if($ses_sql->num_rows==0)
  {
@@ -61,15 +62,15 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM panache WHERE society_name='$te
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details</div>";
           $user = $email1; // Participant's Mail-ID
     $admin = 'admin@jiitconverge.com';     
-    $fest = "manvichaudhary06@gmail.com";   
+    $fest = "akshitag1997@gmail.com";   
     $subject = "Copy of your form submission";
 
     //$message1 = "Hi fellas ";
-    $message1= "Thank You for registering at Converge-2017<br> ";
+    $message1= "Thank You for registering at Converge-2018<br> ";
     $message2 = "Your Event Details <br><br>Event: $eventname";
     $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
     $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact Us ";
-    $message3.= "<br>Event Coordinator<br>Manvi Chaudhary +91-9711446508 <br><br>Regards JIIT Converge Team ";
+    $message3.= "<br>Event Coordinator<br>Akshita 8527348631 <br><br>Regards JIIT Converge Team ";
     $header = "From: ".$admin;
     $fmessage =$message1.$message2.$message3;
     $m=maildesign($fmessage,$teamname);
@@ -81,7 +82,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM panache WHERE society_name='$te
 
     $message = "A new registration for event: $eventname <br>Details <br>Team Name: $teamname";
     $message.= "<br>Number of members in the team: $team_members";
-    $message.= "<br>College: $college  <br>Team Head Details <br><br>Name: $fname1 <br>Mail-ID: $email1 <br>Contact No.: $phone1 <br> Team Representative Details <br><br> Name:$fname2 <br>Mail-ID: $email2 <br>Contact No.: $phone2 ";
+    $message.= "<br>College: $college  <br>Team Head Details <br><br>Name: $fname1 <br>Mail-ID: $email1 <br>Contact No.: $phone1 <br><br> Team Representative Details <br> Name:$fname2 <br>Mail-ID: $email2 <br>Contact No.: $phone2 ";
     $subject2 = "Form Submission for your event $eventname";
     
     sendmail($fest,$subject2,maildesign($message,"Event Head"),$header); // sends a copy of the message to the sender
@@ -102,7 +103,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM panache WHERE society_name='$te
           echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. This Society name is already registered. Please try again.</div>";
      }
      else {
-         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. An emailID or contact you entered was already in our database.</div>";
+         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. An emailid or contact you entered was already in our database.</div>";
      }
      
  }

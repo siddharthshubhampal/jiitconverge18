@@ -1,4 +1,6 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for this event.<br><br> For enquiry, contact:<br>Nityanshi +91-9675604574</div>
+
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">rihaa</div>
@@ -10,7 +12,6 @@
 <label for="cname">Teamname</label>
 <input id="cname" name="teamname" minlength="2"  type="username" pattern="[A-Za-z,-_ ]{1,60}" required>
 </p>
--->
 
 <p>
 <label for="ccol">College</label>
@@ -20,16 +21,19 @@
 <p>
 <label for="tmem">Team Members</label>
 <select name="team_members" id="team_members">
-                              
-                                                                     
-
-
-                                                                      <option id="16" value="16">16</option>
-                                                                      <option id="17" value="17">17</option>
-                                                                      <option id="18" value="18">18</option>
-                                                                      <option id="19" value="19">19</option>
-                                                                      <option id="20" value="20">20</option>
-                                                                      <option id="21" value="21">21</option>										
+                                            <option id="12" value="12">12</option>
+                                            <option id="13" value="13">13</option>
+                                            <option id="14" value="14">14</option>
+                                            <option id="15" value="15">15</option>
+                                            <option id="16" value="16">16</option>
+                                            <option id="17" value="17">17</option>
+                                            <option id="18" value="18">18</option>
+                                            <option id="19" value="19">19</option>
+                                            <option id="20" value="20">20</option>
+                                            <option id="21" value="21">21</option>
+                                            <option id="22" value="22">22</option>
+                                            <option id="23" value="23">23</option>	
+                                            <option id="24" value="24">24</option>													
                               </select>
 </p>
 
@@ -44,7 +48,7 @@
                          
                        </select>
 </p>
--->
+
 
 <p>
 <div class="open-arrow"></div><label for="cemail">Team Head Details</label><br>
@@ -57,7 +61,7 @@
 <label for="cemail">Last Name</label>
 <input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
 </p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -91,10 +95,9 @@
 <label for="cemail">E-Mail (required)</label>
 <input id="cemail" type="email" name="email2" >
 </p>
--->
 
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

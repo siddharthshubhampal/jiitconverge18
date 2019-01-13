@@ -1,16 +1,12 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap.<br> Looks like you are a little bit late.<br><br>See you next year!</div>
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">volleyball</div>
 <form class="cmxform" id="event-form" name="volleyball"  method="POST" >
 <fieldset>
 
-<!--
-<p>
-<label for="cname">Teamname</label>
-<input id="cname" name="teamname" minlength="2"  type="username" pattern="[A-Za-z,-_ ]{1,60}" required>
-</p>
--->
+
 
 <p>
 <label for="ccol">College</label>
@@ -37,18 +33,14 @@
                               </select>
 </p>
 
-<!--
-<p>
-<label>Year</label>  
-                        <select style="width: 236px" id="year" name="year">
-                          <option value="1">Undergraduate 1st year</option>
-                          <option value="2">Undergraduate 2nd year</option>
-                          <option value="3">Undergraduate 3rd year</option>
-                          <option value="4">Undergraduate 4th year</option>
-                         
+	<p>
+<label>Girls/Boys</label>  
+                        <select id="gender" name="gender" >
+                          <option value="1">Girls</option>
+                          <option value="2">Boys</option>                         
                        </select>
 </p>
--->
+	
 
 <p>
 <div class="open-arrow"></div><label for="cemail">Team Captain Details</label><br>
@@ -56,12 +48,6 @@
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
 
-<!--
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
-</p>
--->
 
 <p>
 <label for="cemail">Phone</label>
@@ -74,31 +60,8 @@
 </p>
 
 
-<!--
-<p>
-<div class="open-arrow"></div><label for="cemail">Team Representative Details</label><br>
-<label for="cemail">First Name</label>
-<input id="cemail" type="text" name="firstname2" pattern="[A-Za-z ]{1,30}" >
-</p>
-
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname2" pattern="[A-Za-z ]{1,30}" >
-</p>
-
-<p>
-<label for="cemail">Phone</label>
-<input id="ph"  name="phone2" type="text" minlength="10" maxlength="10" pattern="[789]{1}[0-9]{9}" >
-</p>
-
-<p>
-<label for="cemail">E-Mail </label>
-<input id="cemail" type="email" name="email2" >
-</p>
--->
-
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

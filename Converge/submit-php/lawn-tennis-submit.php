@@ -31,11 +31,11 @@ ini_set("mail.add_x_header", TRUE);
 
 
 $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
-//$lname1=mysqli_real_escape_string($connection,$_POST['lastname1']);
+$team_members=mysqli_real_escape_string($connection,$_POST['team_members']);
 $college=mysqli_real_escape_string($connection,$_POST['college']);
 $event='LAWN TENNIS';
 $eventname='Lawn Tennis Competition';
-$year=mysqli_real_escape_string($connection,$_POST['year']);
+//$year=mysqli_real_escape_string($connection,$_POST['year']);
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
 
@@ -47,7 +47,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event
  if($ses_sql->num_rows==0)
  {
      // new record
-     $sql = "INSERT INTO sports VALUES ('$event','$college','$fname1','$phone1','$email1','','$year')";
+     $sql = "INSERT INTO sports VALUES ('Boys','$event','$college','$fname1','$phone1','$email1','$team_members','')";
      if ($connection->query($sql) == TRUE) {
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details.</div>";
         $user = $email1; // Participant's Mail-ID

@@ -1,22 +1,32 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap.<br> Looks like you are a little bit late.<br><br>See you next year!</div>
+
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">basketball</div>
-<form class="cmxform" id="event-form" name="basketball"  method="POST" >
+<form class="cmxform" id="event-form" name="badminton"  method="POST" >
 <fieldset>
+
 
 <!--
 <p>
 <label for="cname">Teamname</label>
 <input id="cname" name="teamname" minlength="2"  type="username" pattern="[A-Za-z,-_ ]{1,60}" required>
 </p>
--->
 
 <p>
 <label for="ccol">College</label>
 <input id="ccol" name="college" minlength="2"  type="text" pattern="[A-Za-z,-_ ]{1,60}" required>
 </p>
-
+	
+<p>
+<label>Girls/Boys</label>  
+                        <select style="width: 136px" id="gender" name="gender" >
+                          <option value="1">Girls</option>
+                          <option value="2">Boys</option>                         
+                       </select>
+</p>
+	
 <p>
 <label for="tmem">Team Members</label>
 <select name="team_members" id="team_members">
@@ -48,7 +58,6 @@
                          
                        </select>
 </p>
--->
 
 <p>
 <div class="open-arrow"></div><label for="cemail">Team Captain Details</label><br>
@@ -61,7 +70,7 @@
 <label for="cemail">Last Name</label>
 <input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
 </p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -95,10 +104,9 @@
 <label for="cemail">E-Mail (required)</label>
 <input id="cemail" type="email" name="email2" >
 </p>
--->
 
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

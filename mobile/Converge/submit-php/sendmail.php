@@ -19,8 +19,8 @@
                   $mail->Username   = "admin@jiitconverge.com";
                   $mail->Password   = "Sid$232093//";
                  // $mail->SMTPSecure = 'ssl';                  
-                  $mail->SetFrom('admin@jiitconverge.com', 'JIIT Converge 2017');
-                  $mail->AddReplyTo("admin@jiitconverge.com","JIIT Converge 2017");
+                  $mail->SetFrom('admin@jiitconverge.com', 'JIIT Converge 2018');
+                  $mail->AddReplyTo("admin@jiitconverge.com","JIIT Converge 2018");
                   $mail->Subject    = $subject;
                   $mail->AltBody    = "To view the message, please use an HTML compatible email viewer!";
                   $mail->MsgHTML($body);

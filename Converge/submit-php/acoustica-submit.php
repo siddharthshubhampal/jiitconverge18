@@ -41,7 +41,7 @@ $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
 $accompanist= mysqli_real_escape_string($connection,$_POST['accompanists']);
 //$team;
-$date= ' Feb 3, 2018 ';
+$date= ' Feb 4, 2018 ';
 $eventime= ' NA ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM music_society WHERE event_name='$event' and email_id='$email1' or event_name='$event' and phone_no='$phone1' ");
@@ -55,7 +55,7 @@ echo 'here';
     $user = $email1; // Participant's Mail-ID
     $admin = 'admin@jiitconverge.com';     
 	//$fest = "srivastavakshat96@gmail.com";   
-    $fest = "fortissimojiit@gmail.com";
+    $fest = "fortissimojiit128@gmail.com";
     $subject = "Copy of your form submission";
 
     //$message4 = "Hi $fname1 ";

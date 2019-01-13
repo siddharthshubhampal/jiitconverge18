@@ -1,5 +1,5 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for CRUSADE.</div> -->
-
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for CRUSADE.<br><br> For enquiry, contact:<br>Kartik +91-7011671174</div>
+<!--
 <link rel="stylesheet" type="text/css" href="../../Converge/css/form-style.css">
 <script src="../../Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">crusade</div>
@@ -32,10 +32,10 @@
                                                                       <option id="11" value="11">11</option>
                                                                       <option id="12" value="12">12</option>
                               </select>
-</p> -->
+</p>
 
 <p>
-<label for="cemail">Video Link of Past Performance</label>
+<label for="cemail">Video Link for prelims round</label>
 <input id="cemail" type="text" name="url"  minlength="2" pattern="[A-Za-z,-_]{1,90}" required>
 </p>
 
@@ -60,3 +60,4 @@
 </p>
 </fieldset>
 </form>
+ -->

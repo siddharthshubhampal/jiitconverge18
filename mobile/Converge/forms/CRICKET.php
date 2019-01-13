@@ -1,4 +1,6 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like you are a little bit late.<br><br>See you next year!</div>
+
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">cricket</div>
@@ -10,7 +12,6 @@
 <label for="cname">Teamname</label>
 <input id="cname" name="teamname" minlength="2"  type="username" pattern="[A-Za-z,-_ ]{1,60}" required>
 </p>
--->
 
 <p>
 <label for="ccol">College</label>
@@ -47,7 +48,7 @@
 <label for="cemail">Last Name</label>
 <input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
 </p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -93,10 +94,10 @@
 <label for="cemail">E-Mail (required)</label>
 <input id="cemail" type="email" name="email2" >
 </p>
--->
+
 
 <p>
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

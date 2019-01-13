@@ -1,4 +1,4 @@
-<!--Now working the submissions and all. Need to change the email and details of the events-->
+<!--Now working the submissions and all. Need to change the email and details of the events -->
 <?php
 include("sendmail.php");
 include("maildesign.php");
@@ -47,7 +47,7 @@ $email1=mysqli_real_escape_string($connection,$_POST['email1']);
 //$phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 //$email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 4th & 5th FEB 2017 ';
+$date= ' 2nd, 3rd & 4th FEB 2018 ';
 $eventime= ' 9:00 A.M. to 5:00 P.M. ';
 $reportime= ' NA ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM football WHERE email_id='$email1'");
@@ -58,15 +58,15 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM football WHERE email_id='$email
      if (mysqli_query($connection,$sql) == TRUE) {
          $user = $email1; // Participant's Mail-ID
     $admin = 'admin@jiitconverge.com';     
-    $fest = "sahejeetbawa@gmail.com";   
+    $fest = "abhi12.tyagi@gmail.com";   
     $subject = "Copy of your form submission";
 
     //$message1 = "Hi $teamname !";
-    $message1= "Thank You for registering at Converge-2016<br>";
+    $message1= "Thank You for registering at Converge-2018<br>";
     $message2 = "Your Event Details <br><br>Event: $eventname";
     $message2.= "<br>On $date <br>Event starts at $eventime ";
     $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-    $message3.= "<br>Event Coordinator<br>Sahajeet Singh Bawa +91-9958459197 <br><br>Regards JIIT Team ";
+    $message3.= "<br>Event Coordinator<br>Abhinav +91-8800729553 <br><br>Regards JIIT Team ";
     $header = "From: ".$admin;   
     $fmessage =$message1.$message2.$message3;
     $m=maildesign($fmessage,$fname1);
@@ -76,7 +76,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM football WHERE email_id='$email
    //sendmal($user,$subject,$message3,$header);
 
     $message = "A new registration for event: $eventname <br>Details ";
-    $message.= "<br>Number of members in the team: 7 <br>College: $college  <br>Mail-ID $email1 <br>Contact No.: $phone1 ";
+    $message.= "<br>College: $college  <br>Mail-ID $email1 <br>Contact No.: $phone1 ";
     $subject2 = "Form Submission for your event $eventname ";    
     
     sendmail($fest,$subject2,maildesign($message,"Event Head"),$header); // sends a copy of the message to the sender

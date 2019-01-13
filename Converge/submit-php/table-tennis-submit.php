@@ -65,7 +65,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM sports WHERE event_name='$event
         $subject = "Copy of your form submission";
 
         //$message4 = "Hi $fname1 ";
-        $fmessage= "Thank You for registering at Converge-2018 <br>Your Event Details <br><br>Event: $eventname<br>On $date <br>Event starts at $eventime<br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br>For more details,<br>Contact <br>Event Coordinator<br>Kartik +91-7011671174 <br>Regards JIIT Team ";
+        $fmessage= "Thank You for registering at Converge-2018 <br>Your Event Details <br><br>Event: $eventname<br>On $date <br>Event starts at $eventime<br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br>For more details,<br><br>Contact <br>Event Coordinator<br>Kartik +91-7011671174 <br>Regards JIIT Team ";
         $header = "From: ".$admin; 
 
    // $fmessage =$message4.$message2.$message3;

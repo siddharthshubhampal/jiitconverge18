@@ -5,7 +5,7 @@ var effect=0;
 var subWindowOpened=false;
 var internId;
 var selectedEvent;
-var eventList=[["CODING","4"],["ROBOTICS","3"],["QUIZZING","2"],["CULTURAL","11"],["SPORTS","7"],["INFORMAL","2"],["YOUTH-MARATHON","1"]];
+var eventList=[["GDG","2"],["ROBOTICS","3"],["QRIOSITY","2"],["CULTURAL","13"],["SPORTS","7"],["INFORMAL","6"],["YOUTH-MARATHON","1"]];
 var maxEventCount;
 var scrollPositionSubWindow="none";
 var startJQuery=true;

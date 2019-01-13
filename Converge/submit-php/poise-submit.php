@@ -50,9 +50,9 @@ $fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 $phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 $email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 3rd FEB 2018 ';
-$eventime= ' NA ';
-$reportime= ' NA ';
+$date= ' 4th FEB 2018 ';
+$eventime= ' 02:15 P.M. ';
+$reportime= ' 10:00 A.M. ';
 $ses_sql=mysqli_query($connection,"SELECT * FROM panache WHERE society_name='$teamname' or phone_head = '$phone1' or phone_head = '$phone2' or phone_rep = '$phone1' or phone_rep='$phone2' or email_head='$email1' or email_head='$email2' or email_rep = '$email1' or email_rep = '$email2'");
  if($ses_sql->num_rows==0)
  {

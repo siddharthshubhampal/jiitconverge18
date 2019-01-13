@@ -1,0 +1,1 @@
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww snap! <br>Registrations are Closed. Looks like you were a little bit late.<br><br> See you next year!</div>

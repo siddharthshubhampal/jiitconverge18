@@ -36,34 +36,34 @@ $fname1=mysqli_real_escape_string($connection,$_POST['firstname1']);
 $college=mysqli_real_escape_string($connection,$_POST['college']);
 $event='ACOUSTICA';
 $eventname='Acoustica - Solo Singing Competition';
-//$year=mysqli_real_escape_string($connection,$_POST['year']);
+$year=mysqli_real_escape_string($connection,$_POST['year']);
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
-$accompanist=  mysqli_real_escape_string($connection,$_POST['accompanists']);
+$accompanist= mysqli_real_escape_string($connection,$_POST['accompanists']);
 //$team;
-$date= ' Feb 5, 2017 ';
-$eventime= ' 10:00 A.M. ';
-$reportime= ' 9:15 A.M. ';
-$ses_sql=mysqli_query($connection,"SELECT * FROM music_society WHERE event_name='$event' and email_id='$email1'");
+$date= ' Feb 4, 2018 ';
+$eventime= ' NA ';
+$reportime= ' NA ';
+$ses_sql=mysqli_query($connection,"SELECT * FROM music_society WHERE event_name='$event' and email_id='$email1' or event_name='$event' and phone_no='$phone1' ");
  if($ses_sql->num_rows==0)
  {
-     $sql = "INSERT INTO music_society VALUES ('$event','$college','$fname1','','$email1','$accompanist')";
+     $sql = "INSERT INTO music_society VALUES ('$event','$college','$fname1','$year','$email1','$accompanist','$phone1')";
      // new record
 echo 'here';
      if (mysqli_query($connection,$sql) == TRUE) {
      echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Check your mail for details.</div>";   
     $user = $email1; // Participant's Mail-ID
-    $admin = 'admin@junioriit.com';     
+    $admin = 'admin@jiitconverge.com';     
 	//$fest = "srivastavakshat96@gmail.com";   
-    $fest = "srivastavakshat96@gmail.com";
+    $fest = "fortissimojiit128@gmail.com";
     $subject = "Copy of your form submission";
 
     //$message4 = "Hi $fname1 ";
-    $message4= "Thank You for registering at Converge-2017<br> ";
+    $message4= "Thank You for registering at Converge-2018<br> ";
     $message2 = "Your Event Details <br><br>Event: $eventname";
-    $message2.= "<br>Prelims on $date <br>Reporting Time: $reportime <br>Event starts at $eventime <br>";
+    $message2.= "<br>Date: $date <br>Reporting Time: $reportime <br>Event starts at $eventime <br>";
     $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-    $message3.= "<br>Event Coordinator<br>Akshat Srivastava +91-8010149203<br><br>Regards JIIT Converge Team ";
+    $message3.= "<br>Event Coordinator<br>Kartik : 7011677174<br><br>Regards JIIT Converge Team ";
     $header = "From: ".$admin;  
     
     $fmessage =$message4.$message2.$message3;

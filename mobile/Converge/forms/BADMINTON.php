@@ -1,4 +1,6 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like you are a little bit late.<br><br>See you next year!</div>
+
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">badminton</div>
@@ -22,24 +24,28 @@
 
 <p style="margin-left:20%;width:85%;text-align:right; font-color:#ccc;"> Singles event will only take place depending upon the number of registrations and available time slots.
 	</p>
--->
+
+	
+
+	
 <p>
 <label>Girls/Boys</label>  
                         <select style="width: 136px" id="gender" name="gender" 
-                                onchange="(document.getElementById('gender').value > 1) ? (document.getElementById('3').disabled = true, document.getElementById('team_members').value = 4) : (document.getElementById('3').disabled = false)">
+                               onchange="(document.getElementById('gender').value > 1) ? (document.getElementById('3').disabled = true,document.getElementById('2').disabled = true,document.getElementById('5').disabled = false, document.getElementById('team_members').value = 5) : (document.getElementById('5').disabled = true, document.getElementById('3').disabled = false, document.getElementById('2').disabled = false)">
                           <option value="1">Girls</option>
                           <option value="2">Boys</option>                         
                        </select>
 </p>
 <br>
 
-<div id="team_mem" style="display: none;">
+<div id="team_mem" style="display: block;">
 <p>
 <label for="tmem">Team Members</label>
 <select name="team_members" id="team_members" required>                                                                                                                                                                                                                                              
-                                                                      <option id="5" value="5">5</option>
+                                                                      <option id="5" value="5" disabled>5</option>
                                                                       <option id="4" value="4">4</option>
                                                                       <option id="3" value="3">3</option>
+																	  <option id="2" value="2">2</option>
                               </select>
 </p>
 </div>
@@ -51,12 +57,6 @@
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
 
-<!--
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
-</p>
--->
 
 <p>
 <label for="cemail">Phone</label>
@@ -73,4 +73,4 @@
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

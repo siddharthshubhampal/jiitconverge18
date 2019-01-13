@@ -1,3 +1,5 @@
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Registrations Closed. Looks like we hit our maximum capacity for this event.<br><br> For enquiry, contact:<br>Tanmay +91-9871767650</div>
+<!--
 <link rel="stylesheet" type="text/css" href="/mobile/Converge/css/form-style.css">
 <script src="/mobile/Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">flutter-the-shutter</div>
@@ -33,7 +35,7 @@
 <label for="cemail">Last Name</label>
 <input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
 </p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -50,4 +52,4 @@
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

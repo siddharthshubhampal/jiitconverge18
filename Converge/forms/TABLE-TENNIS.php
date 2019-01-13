@@ -1,4 +1,5 @@
-<!--<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap. Looks like you were a bit too late. Be a part of us next year.</div>-->
+<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>Awww Snap.<br> Looks like you are a little bit late.<br><br>See you next year!</div>
+<!--
 <link rel="stylesheet" type="text/css" href="../../Converge/css/form-style.css">
 <script src="../../Converge/js/formSubmit.js"></script>
 <div class="hidden event-name">table-tennis</div>
@@ -22,13 +23,12 @@
                          
                        </select>
 </p>
--->
+
 
 <p>
 <label for="tmem">Team Members</label>
 <select name="team_members" id="team_members">                                                                                                 
-                                                                      <option id="3" value="3">3</option>
-                                                                                                                                  
+                                                                      <option id="3" value="3">3</option>                                                                    
                               </select>
 </p>
 <p>
@@ -46,12 +46,7 @@
 <input id="cemail" type="text" name="firstname1"  minlength="2" pattern="[A-Za-z-']+\s[A-Za-z-']+" title="Firstname Lastname" required>
 </p>
 
-<!--
-<p>
-<label for="cemail">Last Name</label>
-<input id="cemail" type="text" name="lastname1"  minlength="2" pattern="[A-Za-z ]{1,30}" required>
-</p>
--->
+
 
 <p>
 <label for="cemail">Phone</label>
@@ -59,7 +54,7 @@
 </p>
 
 <p>
-<label for="cemail">E-Mail (required)</label>
+<label for="cemail">Email</label>
 <input id="cemail" type="email" name="email1" required>
 </p>
 
@@ -68,4 +63,4 @@
 <input class="submit submit-form" type="submit" value="Submit">
 </p>
 </fieldset>
-</form>
+</form> -->

@@ -23,11 +23,11 @@ if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
 
-ini_set('display_errors', '0');
+//ini_set('display_errors', '0');
 
 //error_reporting(-1);
 //ini_set('display_errors', 'On');
-set_error_handler("var_dump");
+//set_error_handler("var_dump");
 ini_set("mail.log", "C:\Windows\Temp\mail.log");
 ini_set("mail.add_x_header", TRUE);
 
@@ -41,19 +41,19 @@ $eventname='Rihaa - Street Play';
 //$year=mysqli_real_escape_string($connection,$_POST['year']);
 $phone1=mysqli_real_escape_string($connection,$_POST['phone1']);
 $email1=mysqli_real_escape_string($connection,$_POST['email1']);
-
+$event='RIHAA';
 //$fname2=mysqli_real_escape_string($connection,$_POST['firstname2']);
 //$lname2=mysqli_real_escape_string($connection,$_POST['lastname2']);
 //$phone2=mysqli_real_escape_string($connection,$_POST['phone2']);
 //$email2=mysqli_real_escape_string($connection,$_POST['email2']);
 //$team;
-$date= ' 4th FEB 2017 ';
-$eventime= ' 10:30 A.M. ';
-$reportime= ' 9:30 A.M. ';
-$ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$email1' or contact='$phone1'");
+$date= ' 3rd FEB 2018 ';
+$eventime= ' NA ';
+$reportime= ' NA ';
+$ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$email1' and event1='$event' or contact='$phone1' and event1='$event'");
  if($ses_sql->num_rows==0)
  {
-     $sql = "INSERT INTO dramatics VALUES ('$college','$fname1','$phone1','$email1','$team_members')";
+     $sql = "INSERT INTO dramatics VALUES ('$event','$college','$fname1','$phone1','$email1','$team_members')";
      // new record
     if (mysqli_query($connection,$sql) == TRUE) {
         echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;text-align:center;font-family:Lato;word-wrap:normal'>You have succesfully registered. Please check your email for details</div>";
@@ -62,15 +62,15 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$emai
         $fest = "abhivyakti128@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message2 = "Your Event Details <br><br>Event: $eventname";
+        $message2 = "<b>Your Event Details</b> <br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
-        $message3.= "<br>Event Coordinator <br>Aakash Sachdeva: +91-9958156297 <br><br>Regards JIIT Converge Team ";
-        $message4 = "Thank You for registering at Converge-2017<br> ";
+        $message3.= "<br>Event Coordinator <br>Nityanshi : +91-9675604574 <br><br>Regards JIIT Converge Team ";
+        $message4 = "Thank You for registering at Converge-2018<br><br> ";
         $header = "From: ".$admin;
 		
 		
-        $fmessage =$message2.$message3.$message4;
+        $fmessage =$message4.$message2.$message3;
         $m=maildesign($fmessage,$fname1);
         sendmail($user,$subject,$m,$header);
         //sendmail($user,$subject,$message2,$header);

@@ -65,8 +65,8 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM indian_dance WHERE event_name='
         $fest = "bhangdedesartaajjiit@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message1 = "Thank You for registering at Converge-2018 <br>";
-        $message2 = "Your Event Details <br><br>Event: $eventname";
+        $message1 = "Thank You for registering at Converge-2018<br> <br>";
+        $message2 = "<b>Your Event Details </b><br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
         $message3.= "<br>Event Coordinators<br>Sparsh Majhe : 9981710089 <br>Regards JIIT Converge Team ";
@@ -100,7 +100,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM indian_dance WHERE event_name='
 // $team=$team+1;
 //break; 
 //}
-     echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. This email or contact is already registered for ADIVYA. Please try again.</div>";
+     echo "<div style='width:60%;height:60%;margin:20% auto;font-size:150%;font-family:'Lato';word-wrap:normal'>There was error in registration. This email or contact is already registered for ADAVAYA. Please try again.</div>";
 }
 $connection->close();
 ?>

@@ -27,7 +27,7 @@ if ($connection->connect_error) {
 
 //error_reporting(-1);
 //ini_set('display_errors', 'On');
-set_error_handler("var_dump");
+//set_error_handler("var_dump");
 ini_set("mail.log", "C:\Windows\Temp\mail.log");
 ini_set("mail.add_x_header", TRUE);
 
@@ -50,7 +50,7 @@ $event='RIHAA';
 $date= ' 3rd FEB 2018 ';
 $eventime= ' NA ';
 $reportime= ' NA ';
-$ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$email1' and event1='$event' or contact='$phone1' and event1=''$event");
+$ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$email1' and event1='$event' or contact='$phone1' and event1='$event'");
  if($ses_sql->num_rows==0)
  {
      $sql = "INSERT INTO dramatics VALUES ('$event','$college','$fname1','$phone1','$email1','$team_members')";
@@ -62,15 +62,15 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM dramatics WHERE email_id='$emai
         $fest = "abhivyakti128@gmail.com";   
         $subject = "Copy of your form submission";
 
-        $message2 = "Your Event Details <br><br>Event: $eventname";
+        $message2 = "<b>Your Event Details</b> <br><br>Event: $eventname";
         $message2.= "<br>On $date <br>Reporting Time: $reportime <br>Event starts at $eventime ";
         $message3 = "<br><br>Location: Inside Jaypee WishTown, Sector-128, Noida (3-4 Kms from Amity University)<br><br>For more details,<br>Contact ";
         $message3.= "<br>Event Coordinator <br>Nityanshi : +91-9675604574 <br><br>Regards JIIT Converge Team ";
-        $message4 = "Thank You for registering at Converge-2018<br> ";
+        $message4 = "Thank You for registering at Converge-2018<br><br> ";
         $header = "From: ".$admin;
 		
 		
-        $fmessage =$message2.$message3.$message4;
+        $fmessage =$message4.$message2.$message3;
         $m=maildesign($fmessage,$fname1);
         sendmail($user,$subject,$m,$header);
         //sendmail($user,$subject,$message2,$header);

@@ -1,4 +1,4 @@
-<!--Now working the submissions and all. Need to change the email and details of the events-->
+<!--Now working the submissions and all. Need to change the email and details of the events -->
 <?php
 include("sendmail.php");
 include("maildesign.php");
@@ -76,7 +76,7 @@ $ses_sql=mysqli_query($connection,"SELECT * FROM football WHERE email_id='$email
    //sendmal($user,$subject,$message3,$header);
 
     $message = "A new registration for event: $eventname <br>Details ";
-    $message.= "<br>Number of members in the team: 7 <br>College: $college  <br>Mail-ID $email1 <br>Contact No.: $phone1 ";
+    $message.= "<br>College: $college  <br>Mail-ID $email1 <br>Contact No.: $phone1 ";
     $subject2 = "Form Submission for your event $eventname ";    
     
     sendmail($fest,$subject2,maildesign($message,"Event Head"),$header); // sends a copy of the message to the sender
